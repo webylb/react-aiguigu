@@ -21,6 +21,7 @@ export default class SearchUser extends Component {
 	}
 
   updateStatus = (e) => {
+		console.log(e)
     this.setState(e)
   }
 

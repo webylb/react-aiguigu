@@ -29,7 +29,7 @@ export default class SearchList extends Component {
           isFirst ?  '欢迎使用' :
           isLoading ? 'Loading...' :
           err ? err :
-          this.userList.map((item) => {
+          this.state.userList.map((item) => {
             return <SearchListItem item={item} key={item.id} />
           })
         }
